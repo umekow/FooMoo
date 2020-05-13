@@ -1,38 +1,43 @@
 .editorContainer{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;  
     margin-top: 5%;
     
-
-    //Journal entry header 
-    .entryHeader{
-        width: 100%; 
+    .ql-container{
         border: none; 
-
-        input{
-            width: 100%;
-            border: none;
-            font-size: 1.2rem;
-            padding-left: 2%;
-            
-            &:focus{
-                outline: none;
-                
-            }
-        }
-    
-        
     }
+    
+    .ql-toolbar.ql-snow{
+        border: none; 
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;  
+    }
+    
+    
 }
 
-
-.ql-container{
+.entryTop{
+    display:flex; 
+}
+.entryHeader{
+    width: 100%; 
     border: none; 
+
+    input{
+        width: 100%;
+        border: none;
+        font-size: 1.2rem;
+        padding-left: 2%;
+        
+        &:focus{
+            outline: none;
+            
+        }
+    }
+
+    
 }
 
-.ql-toolbar.ql-snow{
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;  
-}
+
 
 

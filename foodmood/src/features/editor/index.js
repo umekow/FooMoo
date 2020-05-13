@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css'
 import './editor.scss'
+import save_check from './images/save_check.svg'
 
 const Editor = props => {
     const [header, setHeader] = useState('Entry Title')
@@ -10,8 +11,20 @@ const Editor = props => {
     return(
         <div className='editorContainer'>
             {/* header for journal entry  */}
-            <div className='entryHeader'>
-                <input type='text' placeholder={header}/>
+            <div className='entryTop'>
+                <div className='entryHeader'>
+                    <input type='text' placeholder={header}/>
+                </div>
+
+                <div className='saveButton'>
+                    {/* save icon */}
+                    <img src={save_check} alt='save '/>
+                </div>
+
+                <div className='smileyDropDown'>
+                    {/* smileyDropDown */}
+                </div>
+            
             </div>
             {/*text editor */}
             <ReactQuill
