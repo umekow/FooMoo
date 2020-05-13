@@ -1,43 +1,39 @@
 .editorContainer{
     width: 70%;
-    margin: 0 auto;  
+    margin: 0 auto;
     margin-top: 5%;
-    
+
     .ql-container{
-        border: none; 
+        border: none;
     }
-    
+
     .ql-toolbar.ql-snow{
-        border: none; 
+        border: none;
         border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;  
+        border-bottom: 1px solid #ccc;
     }
-    
-    
+
+
 }
 
 .entryTop{
-    display:flex; 
+    display:flex;
 }
 .entryHeader{
-    width: 100%; 
-    border: none; 
+    width: 100%;
+    border: none;
 
     input{
         width: 100%;
         border: none;
         font-size: 1.2rem;
         padding-left: 2%;
-        
+
         &:focus{
             outline: none;
-            
+
         }
     }
 
-    
+
 }
-
-
-
-
