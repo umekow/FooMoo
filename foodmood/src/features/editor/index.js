@@ -1,22 +1,23 @@
 import React, { useState } from 'react'
 import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css'
-
+import './editor.scss'
 
 const Editor = props => {
     const [header, setHeader] = useState('Entry Title')
     const [text, setText] = useState('How are you feeling today?')
+    const [mood, setMood] = useState()
     return(
         <div className='editorContainer'>
             {/* header for journal entry  */}
             <div className='entryHeader'>
-                <input style={{width: '780px', height: '50px', margin:'0',  border: 'none'}} type='text' placeholder={header}/>
+                <input type='text' placeholder={header}/>
             </div>
             {/*text editor */}
             <ReactQuill
                 style={{
-                    width:'800px',
-                    height: '400px', 
+                    width:'100%',
+                    height: '500px', 
                     margin: '0 auto', 
                     
                 }}
