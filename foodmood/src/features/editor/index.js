@@ -20,6 +20,7 @@ const Editor = props => {
                     height: '500px', 
                     margin: '0 auto', 
                     
+                    
                 }}
                 theme='snow'
                 value={text}
