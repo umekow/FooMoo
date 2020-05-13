@@ -1,0 +1,20 @@
+.editorContainer {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.editorContainer .entryHeader {
+  width: 100%;
+  border: none;
+}
+.editorContainer .entryHeader input {
+  width: 100%;
+  border: none;
+  font-size: 1.2rem;
+  padding-left: 2%;
+}
+.editorContainer .entryHeader input:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=editor.css.map */
