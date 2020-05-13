@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
-import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css'
 import './editor.scss'
+
+import React, {useState} from 'react'
+import ReactQuill from 'react-quill'
+
 import save_check from './images/save_check.svg'
 
 const Editor = props => {
