@@ -6,7 +6,16 @@ import 'react-quill/dist/quill.snow.css'
 const Editor = props => {
     const [text, setText] = useState('How are you feeling today?')
     return(
-        <ReactQuill theme='snow' value={text} onChange={setText}/>
+        
+        <ReactQuill
+        style={{
+            width:'800px',
+            height: '400px', 
+            margin: '0 auto', 
+            
+        }}
+        theme='snow' value={text} onChange={setText}/>
+        
     )
 }
 
