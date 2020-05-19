@@ -1,29 +1,27 @@
-import React from 'react'; 
+import React from 'react';
 
-//icons
+// icons
 import down_icon from '../../images/icons/arrow.svg'
 
-export default function MoodMenu(props){
+export default function MoodMenu(props) {
 
-    return(
-        <div className="MoodMenu">
-            <div className='currentMood'>
-                <img src={props.img} alt={props.mood}/>
+  return (<div className = "MoodMenu"><div className = 'currentMood'>
+          <img src = {props.img} alt = { props.mood } />
             </div>
-            <div className='arrow'>
-                <img src={down_icon} alt='select a mood'/>
-            </div>
-        </div>
-    )
+          <div className = 'arrow'>
+          <img src = {down_icon} alt = 'select a mood' /></div>
+        </div>)
 }
 
-
-function MoodMenuItem(props){
+function MoodMenuItem(props) {
     return(
-        <div className='moodMenuItem' 
-            onClick={() => props.updateMood}>
-            <img className={moodImg} src={props.img} alt={props.mood}/>
-            <p className='moodLabel'>{props.mood}</p>
-        </div>
+        <div className='moodMenuItem'
+    onClick = {() => props.updateMood} >
+              <img className = {moodImg} src = {props.img} alt =
+               {
+                 props.mood
+               } />
+            <p className='moodLabel'>{props.mood}</p><
+              /div>
     )
 }
