@@ -4,7 +4,12 @@ export default function MoodMenu(props){
 
     return(
         <div className="MoodMenu">
-
+            <div className='currentMood'>
+                <img src={props.img} alt={props.mood}/>
+            </div>
+            <div className='arrow'>
+                
+            </div>
         </div>
     )
 }
