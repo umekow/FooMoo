@@ -1,5 +1,8 @@
 import React from 'react'; 
 
+//icons
+import down_icon from '../../images/icons/arrow.svg'
+
 export default function MoodMenu(props){
 
     return(
@@ -8,7 +11,7 @@ export default function MoodMenu(props){
                 <img src={props.img} alt={props.mood}/>
             </div>
             <div className='arrow'>
-                
+                <img src={down_icon} alt='select a mood'/>
             </div>
         </div>
     )

@@ -1,12 +1,23 @@
 import React from 'react';
 import './App.css';
-import Editor from './features/editor'
+import { BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'; 
+import Editor from './features/editor'; 
+
 
 function App() {
+
   return (
-    <div className="App">
-      <Editor/>
-    </div>
+    <Router>
+      <div className='nav'>
+        <Link to='/'>Home</Link>
+        <Link to='/journal'>Journal</Link>
+      </div>
+      <div className="App">
+        <Switch>
+          <Route path="/journal" component={Editor}></Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
